@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arain Brothers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#F6F4ED;--surface:#FFFFFF;--text:#1B1B18;--muted:#6B6862;--border:#E7E3D8;}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#14151B;--surface:#1D1F28;--text:#F1EFEA;--muted:#9A9CA8;--border:#2A2C38;}}
+  :root[data-theme="dark"]{--bg:#14151B;--surface:#1D1F28;--text:#F1EFEA;--muted:#9A9CA8;--border:#2A2C38;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;}
+  .wrap{max-width:420px;margin:0 auto;padding:48px 20px 60px;text-align:center;}
+  .avatar{font-size:38px;width:76px;height:76px;border-radius:50%;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:23px;margin:0;}
+  .tag{color:var(--muted);font-size:14px;margin-top:4px;}
+  .links{display:flex;flex-direction:column;gap:9px;margin-top:26px;text-align:left;}
+  .lnk{display:flex;align-items:center;gap:10px;padding:13px 15px;border-radius:11px;background:var(--surface);border:1px solid var(--border);color:var(--text);text-decoration:none;font-weight:600;font-size:14.5px;}
+  .dot{width:8px;height:8px;border-radius:50%;flex:0 0 auto;}
+  .licon{width:20px;height:20px;border-radius:5px;flex:0 0 auto;object-fit:cover;}
+  #expiredBlock{display:none;margin-top:26px;padding:22px 18px;border:1px dashed var(--border);border-radius:12px;color:var(--muted);font-size:14px;}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="avatar">🔗</div>
+  <h1>Arain Brothers</h1>
+  
+  <div class="links" id="linksBlock">
+<a class="lnk" href="https://instagram.com/https://www.instagram.com/arainbrothers.1/" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?sz=64&domain=instagram.com" class="licon" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'dot',style:'background:#FF6FA8'}))">Instagram</a>
+<a class="lnk" href="https://facebook.com/https://www.facebook.com/profile.php%3Fid%3D61593207185408" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?sz=64&domain=facebook.com" class="licon" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'dot',style:'background:#FF6FA8'}))">Facebook</a>
+  </div>
+  <div id="expiredBlock">This page's activation period has ended.</div>
+</div>
+<script>
+  var expiryAt = 1790452060650;
+  if(expiryAt !== null && Date.now() > expiryAt){
+    document.getElementById('linksBlock').style.display = 'none';
+    document.getElementById('expiredBlock').style.display = 'block';
+  }
+</script>
+</body>
+</html>
